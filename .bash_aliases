@@ -28,7 +28,14 @@ alias bro-release-upgrade="sudo do-release-upgrade"
 
 
 # cpp coding shortcuts
-alias bro-cpp-run="g++ test.cpp -o test && ./test"
+alias cpp-test="g++ test.cpp -o out && ./out"
+alias cpp-test1="g++ test1.cpp -o out && ./out"
+alias cpp-test2="g++ test2.cpp -o out && ./out"
+
+cpp-run() {
+  g++ "$1" -o out && ./out && rm -f out
+}
+
 
 #kubernetes shortcuts 
 
