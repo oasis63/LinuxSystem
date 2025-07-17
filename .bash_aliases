@@ -36,6 +36,14 @@ cpp-run() {
   g++ "$1" -o out && ./out && rm -f out
 }
 
+cpp-run1(){
+  g++ -std=c++17 -O2 -Wall "$1" -o out && ./out && rm -f out 
+}
+
+cpp-run2(){
+  g++ -std=c++17 -O2 -Wall "$1" -o out && /usr/bin/time -f "real\t%E\nuser\t%U sec\nsys\t%S sec" ./out 2> runtime.txt && rm -f out
+}
+
 
 #kubernetes shortcuts 
 
