@@ -55,8 +55,8 @@ alias cpp-test2="g++ test2.cpp -o out && ./out"
 
 
 # git aliases
-alias git_lol_msg='git commit -m "$(shuf -n1 funny-commit-messages.txt)"'
-alias bro_git_push="git add . ; git_lol_msg ; git push"
+alias git-lol-msg='git commit -m "$(shuf -n1 funny-commit-messages.txt)"'
+alias bro-git-push="git add . ; git-lol-msg ; git push"
 
 
 
