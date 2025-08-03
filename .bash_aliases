@@ -53,6 +53,14 @@ alias cpp-test="g++ test.cpp -o out && ./out"
 alias cpp-test1="g++ test1.cpp -o out && ./out"
 alias cpp-test2="g++ test2.cpp -o out && ./out"
 
+
+# git aliases
+alias git_lol_msg='git commit -m "$(shuf -n2 funny-commit-messages.txt)"'
+
+
+
+# cpp runtime 
+
 cpp-run() {
   g++ "$1" -o out && ./out && rm -f out
 }
